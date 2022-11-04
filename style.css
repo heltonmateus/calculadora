@@ -8,28 +8,38 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    border: 3px solid black;  
+    padding-top: -300px;
+    margin-top: 10%;
+    margin-left: 41%;
+    margin-right: 41%; 
+    background-color: mintcream;     
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 .numeros{
     margin: 5px;
+    
 }
 
 .numeros > button{
     padding: 16px;
+    width: 48px ;
+    height: 50px ;
    
 
 }
 
-#mostrarNumeros{
-
-    padding-top: 10%;
-}
-
 #exibirNumeros{
-
-    padding: 8px;
-    
-
+    background-color: white;
+    width: 200px;
+    height: 30px ;
+    margin: 5px;
+    font-size: 25px;
+    text-align: right;  
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
+
 

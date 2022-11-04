@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="app.js">
+    <script type="text/javascript" src="app.js"></script>
 </head>
 <body>
 
@@ -14,41 +14,43 @@
 
 <div id="calculadora">
         
-    <div id="mostrarNumeros">
-        <label for="numeros"></label>
-        <input type="text" placeholder="0" id="exibirNumeros">
-    </div> 
+    <p id="exibirNumeros"></p>
+    
    
 
     <div class="numeros">
-    <button id="7">7</button>
-    <button id="8">8</button>
-    <button id="9">9</button>
-    <button id="+">+</button>
+    <button id="7" onclick="insert('7')">7</button>
+    <button id="8" onclick="insert('8')">8</button>
+    <button id="9" onclick="insert('9')">9</button>
+    <button id="+" onclick="insert('+')">+</button>
     </div>
 
     <div class="numeros">
-    <button id="4">4</button>
-    <button id="5">5</button>
-    <button id="6">6</button>
-    <button id="-">-</button>
+    <button id="4" onclick="insert('4')">4</button>
+    <button id="5" onclick="insert('5')">5</button>
+    <button id="6" onclick="insert('6')">6</button>
+    <button id="-" onclick="insert('-')">-</button>
     </div>
 
     <div class="numeros">   
-    <button id="1">1</button>
-    <button id="2">2</button>
-    <button id="3">3</button>
-    <button id="/">/</button>
+    <button id="1" onclick="insert('1')">1</button>
+    <button id="2" onclick="insert('2')">2</button>
+    <button id="3" onclick="insert('3')">3</button>
+    <button id="/" onclick="insert('/')">/</button>
     </div>
 
     <div class="numeros">
-    <button id=",">,</button>
-    <button id="0">0</button>
-    <button id="=">=</button>
-    <button id="*">*</button>
+    <button id="," onclick="clean()">c</button>
+    <button id="0" onclick="insert('0')">0</button>
+    <button id="=" onclick="calcular()">=</button>
+    <button id="*" onclick="insert('*')">*</button>
     </div>
 
 </div>
+
     
 </body>
+
+
 </html>
+
